@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_city"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+    <TextView
+        android:text="请选择城市"
+        android:id="@+id/tv_city_name11"
+        android:textColor="@color/textColor"
+        android:textSize="30sp"
+        android:background="#09C7F7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <com.bawei.wangxueshi.citypaixu.city.EditTextWithDel
+        android:id="@+id/activity_city_et_edittextwithdel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/activity_city_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:divider="@null"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/activity_city_tv_A"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="#606060"
+            android:gravity="center"
+            android:text="A"
+            android:textColor="@android:color/white"
+            android:textSize="36sp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <com.bawei.wangxueshi.citypaixu.city.SideBar
+            android:id="@+id/activity_city_sidebar"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center" />
+    </FrameLayout>
+
+
+
+</LinearLayout>
